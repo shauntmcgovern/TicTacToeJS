@@ -1,25 +1,28 @@
-$(document).ready(function () {
+$(document).ready(function () 
+{
     var x = "x";
     var o = "o";
     var turns = 0;
-    var spot1 = $('#spot1');
-    var spot2 = $('#spot2');
-    var spot3 = $('#spot3');
-    var spot4 = $('#spot4');
-    var spot5 = $('#spot5');
-    var spot6 = $('#spot6');
-    var spot7 = $('#spot7');
-    var spot8 = $('#spot8');
-    var spot9 = $('#spot9');
-    $('#board li').on('click', function() {
-        if(spot1.hasClass('o') && spot2.hasClass('o') && spot3.hasClass('o') ||
-            spot4.hasClass('o') && spot5.hasClass('o') && spot6.hasClass('o') ||
-            spot7.hasClass('o') && spot8.hasClass('o') && spot9.hasClass('o') || 
-            spot1.hasClass('o') && spot4.hasClass('o') && spot7.hasClass('o') || 
-            spot2.hasClass('o') && spot5.hasClass('o') && spot8.hasClass('o') || 
-            spot3.hasClass('o') && spot6.hasClass('o') && spot9.hasClass('o') ||
-            spot1.hasClass('o') && spot5.hasClass('o') && spot9.hasClass('o') ||
-            spot3.hasClass('o') && spot5.hasClass('o') && spot7.hasClass('o')) {
+    var x0y2 = $('#x0y2'); 
+    var x1y2 = $('#x1y2'); 
+    var x2y2 = $('#x2y2'); 
+    var x0y1 = $('#x2y1'); 
+    var x1y1 = $('#x1y1'); 
+    var x2y1 = $('#x0y1'); 
+    var x0y0 = $('#x0y0'); 
+    var x1y0 = $('#x1y0'); 
+    var x2y0 = $('#x2y0'); 
+    
+    $('#board li').on('click', function() 
+    {
+        if(x0y2.hasClass('o') && x1y2.hasClass('o') && x2y2.hasClass('o') ||
+            x0y1.hasClass('o') && x1y1.hasClass('o') && x2y1.hasClass('o') ||
+            x0y0.hasClass('o') && x1y0.hasClass('o') && x2y0.hasClass('o') || 
+            x0y2.hasClass('o') && x0y1.hasClass('o') && x0y0.hasClass('o') || 
+            x1y2.hasClass('o') && x1y1.hasClass('o') && x1y0.hasClass('o') || 
+            x2y2.hasClass('o') && x2y1.hasClass('o') && x2y0.hasClass('o') ||
+            x0y2.hasClass('o') && x1y1.hasClass('o') && x2y0.hasClass('o') ||
+            x2y2.hasClass('o') && x1y1.hasClass('o') && x0y0.hasClass('o')) {
 
             alert('The WINNER IS "O"');
             $('#board li').text('+');
