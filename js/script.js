@@ -16,13 +16,13 @@ $(document).ready(function ()
     $('#board li').on('click', function() 
     {
         if  (x0y2.hasClass('o') && x1y2.hasClass('o') && x2y2.hasClass('o') ||
-            x0y1.hasClass('o') && x1y1.hasClass('o') && x2y1.hasClass('o') ||
-            x0y0.hasClass('o') && x1y0.hasClass('o') && x2y0.hasClass('o') || 
-            x0y2.hasClass('o') && x0y1.hasClass('o') && x0y0.hasClass('o') || 
-            x1y2.hasClass('o') && x1y1.hasClass('o') && x1y0.hasClass('o') || 
-            x2y2.hasClass('o') && x2y1.hasClass('o') && x2y0.hasClass('o') ||
-            x0y2.hasClass('o') && x1y1.hasClass('o') && x2y0.hasClass('o') ||
-            x2y2.hasClass('o') && x1y1.hasClass('o') && x0y0.hasClass('o')) 
+             x0y1.hasClass('o') && x1y1.hasClass('o') && x2y1.hasClass('o') ||
+             x0y0.hasClass('o') && x1y0.hasClass('o') && x2y0.hasClass('o') || 
+             x0y2.hasClass('o') && x0y1.hasClass('o') && x0y0.hasClass('o') || 
+             x1y2.hasClass('o') && x1y1.hasClass('o') && x1y0.hasClass('o') || 
+             x2y2.hasClass('o') && x2y1.hasClass('o') && x2y0.hasClass('o') ||
+             x0y2.hasClass('o') && x1y1.hasClass('o') && x2y0.hasClass('o') ||
+             x2y2.hasClass('o') && x1y1.hasClass('o') && x0y0.hasClass('o')) 
         {
             alert('The WINNER IS "O"');
             $('#board li').text('+');
@@ -64,13 +64,13 @@ $(document).ready(function ()
             $(this).text(o);
             $(this).addClass('disable o');
             if  (x0y2.hasClass('o') && x1y2.hasClass('o') && x2y2.hasClass('o') ||
-                x0y1.hasClass('o') && x1y1.hasClass('o') && x2y1.hasClass('o') ||
-                x0y0.hasClass('o') && x1y0.hasClass('o') && x2y0.hasClass('o') || 
-                x0y2.hasClass('o') && x0y1.hasClass('o') && x0y0.hasClass('o') || 
-                x1y2.hasClass('o') && x1y1.hasClass('o') && x1y0.hasClass('o') || 
-                x2y2.hasClass('o') && x2y1.hasClass('o') && x2y0.hasClass('o') ||
-                x0y2.hasClass('o') && x1y1.hasClass('o') && x2y0.hasClass('o') ||
-                x2y2.hasClass('o') && x1y1.hasClass('o') && x0y0.hasClass('o')) 
+                 x0y1.hasClass('o') && x1y1.hasClass('o') && x2y1.hasClass('o') ||
+                 x0y0.hasClass('o') && x1y0.hasClass('o') && x2y0.hasClass('o') || 
+                 x0y2.hasClass('o') && x0y1.hasClass('o') && x0y0.hasClass('o') || 
+                 x1y2.hasClass('o') && x1y1.hasClass('o') && x1y0.hasClass('o') || 
+                 x2y2.hasClass('o') && x2y1.hasClass('o') && x2y0.hasClass('o') ||
+                 x0y2.hasClass('o') && x1y1.hasClass('o') && x2y0.hasClass('o') ||
+                 x2y2.hasClass('o') && x1y1.hasClass('o') && x0y0.hasClass('o')) 
             {
                 alert('The WINNER IS "O"');
                 turns = 0;
